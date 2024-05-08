@@ -7,45 +7,21 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es" >
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="UTF-8"/>
+		<meta name="description" content=" Bienvenido/a a la plataforma de terapia online de Smith Quintero. Encuentra apoyo profesional y compasivo para tus necesidades de salud mental. Nuestra psicóloga licenciada ofrece sesiones de terapia personalizadas para ayudarte a enfrentar los desafíos de la vida. Da el primer paso hacia la sanación y reserva tu sesión hoy mismo."/>
+		<meta name="viewport" content="width=device-width" initial-scale="1"/>
+		<meta name="robots" content="index, follow">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta itemprop="specialty" content="Psicólogos en línea, Psicólogo online, psicólogos por chat.">
+
+		<meta name="keywords" content="psicosmith, psicologa, terapia, salud mental, psicologa Smith Quintero, psicologos en linea, psicologos online, terapia online, depresion, ansiedad.">
+
 		<title>{title}</title>
 	</head>
-	<body>
+	<body >
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
