@@ -6,8 +6,14 @@ export default {
 			spacing: {
 				"144": "40rem",
 				"188": "48rem",
-				"1/3": "20%"
+				
 			},
+			width: {
+				"1/3.5": "30%"
+			},
+			height: {
+				"1/3.5": "30%"
+			}
 		},
 	},
 	plugins: [],
