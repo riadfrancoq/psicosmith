@@ -13,7 +13,17 @@ export default {
 			},
 			height: {
 				"1/3.5": "30%"
+			},
+			rotate: {
+				"360": "360deg"
+			},
+			backgroundImage : {
+				"pc" : "url('../../assets/headerPhone.jpg')",
+				"tablet" : "url('../../assets/headerTablet.jpg')",
+				'phone' : "url('../../assets/headerPhone.jpg')"
+
 			}
+			
 		},
 	},
 	plugins: [],
