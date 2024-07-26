@@ -1,11 +1,10 @@
 ---
-import { Picture, Image } from "astro:assets";
-import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 import PcHeaderImage from "../../assets/headerPc.jpg";
 import TabletHeaderImage from "../../assets/headerTablet.jpg";
 import PhoneHeaderImage from "../../assets/headerPhoneRiad.jpg";
 import HeaderPicture from "../headerPicture/headerPicture.astro";
-
+import whatsappLgoo from "../../assets/whatsappLogo.svg";
 
 
 ---
@@ -15,7 +14,14 @@ import HeaderPicture from "../headerPicture/headerPicture.astro";
 
     
 
-        <a href="http://localhost" target="_blank" rel="noopener noreferrer" class="absolute"> Citas </a>
+        <a href="http://localhost" target="_blank" rel="noopener noreferrer" class="absolute flex flex-row-reverse justify-center items-center bg-slate-900   w-[200px] rounded-full pt-1 pb-1 font-Montserrat z-0"> 
+            <p class="flex flex-col justify-center align-middle bg-green-300 rounded-full text-2xl p-2  ml-4 z-10">Whatsapp</p>
+        <Image  
+            src={whatsappLgoo}  
+            class=" rounded-full  bg-white w-[40px] h-[40px] p-2 ml-3  z-50 overflow-visible"  
+            alt="Logo de Whatsapp click en el para ir al Whatsapp" 
+        />
+        </a>
     </div>
 
 </header>

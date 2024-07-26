@@ -22,6 +22,9 @@ export default {
 				"tablet" : "url('../../assets/headerTablet.jpg')",
 				'phone' : "url('../../assets/headerPhone.jpg')"
 
+			},
+			fontFamily: {
+				Montserrat: ["Montserrat", "sans-serif"]
 			}
 			
 		},

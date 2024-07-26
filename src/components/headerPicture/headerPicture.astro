@@ -36,7 +36,7 @@ const tabletImg = await getImage({
 ---
 
 <picture class="w-full h-full">
-    <source media="(max-width: 1000px)"  class="w-fit h-fit"srcset={mobileImg.src} />
+    <source media="(max-width: 650px)"  class="w-fit h-fit"srcset={mobileImg.src} />
     <source media="(max-width: 1599px)" class="w-fit h-fit" srcset={tabletImg.src}>
     <img class="w-full h-full"  src={desktopImg.src}  alt={alt} />
 </picture>
