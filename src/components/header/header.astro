@@ -1,27 +1,21 @@
 ---
-import { Image } from "astro:assets";
 import PcHeaderImage from "../../assets/headerPc.jpg";
 import TabletHeaderImage from "../../assets/headerTablet.jpg";
-import PhoneHeaderImage from "../../assets/headerPhoneRiad.jpg";
+import PhoneHeaderImage from "../../assets/headerPhone.png";
 import HeaderPicture from "../headerPicture/headerPicture.astro";
-import whatsappLgoo from "../../assets/whatsappLogo.svg";
-
+import Whatsapp from "../buttons/whatsapp.astro";
+import PurpleLine from "../line/purpleLine.astro";
 
 ---
 <header class="h-full relative">
-    <div class=" h-full p-0 m-0 relative flex ">
+    <div class=" h-full p-0 m-0 relative flex flex-col">
         <HeaderPicture  mobileImgUrl={PhoneHeaderImage} desktopImgUrl={PcHeaderImage} tabletImgUrl={TabletHeaderImage} alt="psicosmith" />
 
-    
+        <Whatsapp />
+        
+        <PurpleLine />
 
-        <a href="http://localhost" target="_blank" rel="noopener noreferrer" class="absolute flex flex-row-reverse justify-center items-center bg-slate-900 w-auto h-auto rounded-full pt-1 pb-1 pr-1  font-Montserrat z-0  right-[15%] bottom-[30%] "> 
-            <p class="flex flex-col justify-center align-middle bg-green-300 rounded-full text-2xl p-2  ml-2 z-10 ">Whatsapp</p>
-        <Image  
-            src={whatsappLgoo}  
-            class=" rounded-full  bg-white w-[40px] h-[40px] p-2 ml-1  z-50 overflow-visible"  
-            alt="Logo de Whatsapp click en el para ir al Whatsapp" 
-        />
-        </a>
+       
     </div>
 
 </header>

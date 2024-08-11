@@ -1,7 +1,6 @@
 ---
 import type { ImageMetadata } from "astro";
 import { getImage, Image } from "astro:assets";
-import type { ImageFunction } from "astro:content";
 
 interface Props {
     mobileImgUrl: string | ImageMetadata;
@@ -35,8 +34,8 @@ const tabletImg = await getImage({
 
 ---
 
-<picture class="w-full h-full">
-    <source media="(max-width: 650px)"  class="w-fit h-fit"srcset={mobileImg.src} />
-    <source media="(max-width: 1599px)" class="w-fit h-fit" srcset={tabletImg.src}>
-    <img class="w-full h-full"  src={desktopImg.src}  alt={alt} />
+<picture class="w-fit h-fit">
+    <source media="(max-width: 430px)"  class="w-fit h-fit"srcset={mobileImg.src} />
+    <source media="(max-width: 1067px)" class="w-fit h-fit" srcset={tabletImg.src}>
+    <img class="w-fit h-fit"  src={desktopImg.src}  alt={alt} />
 </picture>
